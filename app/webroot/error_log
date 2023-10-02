@@ -1,0 +1,1 @@
+[19-Feb-2023 03:22:46 America/Chicago] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /home1/krisofixo/public_html/app/Plugin/IP2Location/Lib/IP2Location.php on line 255
