@@ -1,0 +1,27 @@
+# Ignore Composer dependencies (if using Composer)
+/vendor/
+
+# Ignore CakePHP tmp files
+/tmp/
+/logs/
+#/config/app.php
+
+# Ignore CakePHP cache files
+/tmp/cache/
+/tmp/sessions/
+/tmp/tests/
+/tmp/persistent/
+
+# Ignore database configuration files
+#/config/app.php
+
+# Ignore IDE-specific files and folders (e.g., PhpStorm, VS Code)
+.idea/
+.vscode/
+
+# Ignore local configuration files
+/config/.env
+
+# Ignore server-specific files (e.g., Apache, Nginx)
+#/webroot/.htaccess
+#/webroot/index.php
