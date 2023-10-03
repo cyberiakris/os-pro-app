@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	# Uncomment if you have a .well-known directory in the root folder, e.g. for the Let's Encrypt challenge
+	# https://tools.ietf.org/html/rfc5785
+	#RewriteRule ^(\.well-known/.*)$ $1 [L]
+
+    # redirect V2 Force from http to https
+    #RewriteCond %{HTTPS} !on
+    #RewriteCond %{HTTP_HOST} =websitename.com
+    #RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L,NE]
+
+    #Force from http to https --v1
+    #RewriteCond %{HTTPS} !=on
+	#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+	RewriteRule ^$ app/webroot/ [L]
+	RewriteRule (.*) app/webroot/$1 [L]
+</IfModule>
+
