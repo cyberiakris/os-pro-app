@@ -69,11 +69,11 @@ $cakeDescription = __d('cake_dev', WEBSITE_TITLE);
             <!--Content Header -->
             <header class="content-header content-header-mini row ">
                 <div class="heading col-xs-8">
-                    <h1>Blank Page</h1>
+                    <h1>Page</h1>
                 </div>
                 <ul class="col-xs-4 breadcrumb ">
-                    <li> <a href="#">Main Page</a> </li>
-                    <li class="active"> Blank Page </li>
+                    <li> <a href="#">Home</a> </li>
+                    <li class="active"> Page </li>
                 </ul>
             </header>
             <!--Content Header -->

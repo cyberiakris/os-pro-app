@@ -55,7 +55,8 @@ class AppController extends Controller {
             'logoutRedirect' => array('controller' => 'homes', 'action' => 'index'),
             'authError' => 'Access denied - Invalid Login details provided.',
             'authorize' => array('Controller')
-        )
+        ),
+        'CacheApi'
     );
 
     public function __construct($request = null, $response = null) {
@@ -238,6 +239,12 @@ class AppController extends Controller {
             $this->set('flash_msg', $flash_msg);
         }
 
+        // grab site menu
+        $apiUrl = $this->apiUrl . "navmenus/index.json";
+        $sitemenuData = $this->CacheApi->cachedApiData($apiUrl);
+        if(isset($sitemenuData['data'])){
+            $this->set('sitemenu',$sitemenuData['data']);
+        }
     }
 
 }
