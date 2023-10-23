@@ -8,9 +8,39 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 top">
-                            <a href="../Corporate/index.html" class="logo"><img src="<?php echo $this->webroot; ?>img/default/logo.png" alt="" /></a>
+                            <a href="" class="logo"><img src="<?php echo $this->webroot; ?>img/default/logo.png" alt="" /></a>
                             <section class="menu-wrap">
                                 <ul class="nav">
+                                    <?php
+                                    if(isset($sitemenu) && count($sitemenu)){
+                                        foreach ($sitemenu as $m){
+                                            echo '<li class="menu-sec-parent">
+                                            <a href="'.$m['meta']['url'].'">'.$m['text'].'</a>
+                                            </li>';
+                                        }
+                                    }
+                                    else {
+
+                                    }
+                                    ?>
+                                    <!-- sample --
+                                    <li>
+                                        <a href="#">Single</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Default</a>
+                                        <div class="flyout-menu menu-type-1 menu-container">
+                                            <ul class="page-menu">
+                                                <li>
+                                                    <a href="#">header-1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">header-2</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
                                     <li class="menu-sec-parent">
                                         <a href="#">Home</a>
                                         <div class="menu-container menu-big">
@@ -110,41 +140,8 @@
 
                                         </div>
                                     </li>
-                                    <li>
-                                        <a href="../features.html">Features</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Headers</a>
-                                        <div class="flyout-menu menu-type-1 menu-container">
-                                            <ul class="page-menu">
-                                                <li>
-                                                    <a href="../header-1.html">header-1</a>
-                                                </li>
-                                                <li>
-                                                    <a href="../header-2.html">header-2</a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="#">Shortcodes</a>
-                                        <div class="flyout-menu menu-type-1 menu-container">
-                                            <ul class="page-menu">
-                                                <li>
-                                                    <a href="../shortcode-1.html">shortcode-1</a>
-                                                </li>
-                                                <li>
-                                                    <a href="../shortcode-2.html">shortcode-2</a>
-                                                </li>
-                                                <li>
-                                                    <a href="../shortcode-3.html">shortcode-3</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
                                     <li class="menu-sec-parent">
-                                        <a href="#">Pages</a>
+                                        <a href="#">Mega</a>
                                         <div class="menu-container">
                                             <div class="menu-type-2 menu-type-5  style-menu ">
                                                 <section class="link-section-wrapper clearfix">
@@ -269,192 +266,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="menu-sec-parent">
-                                        <a href="#">Blog</a>
-                                        <div class="menu-container">
-                                            <div class="menu-type-2 menu-type-5  style-menu ">
-                                                <section class="link-section-wrapper clearfix">
-                                                    <div class="link-section">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="../blog-1.html">blog-1</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../blog-2.html">blog-2</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../blog-3.html">blog-3</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../blog-4.html">blog-4</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../blog-5.html">blog-5</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="link-section">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="../blog-6.html">blog-6</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../blog-7.html">blog-7</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../blog-8.html">blog-8</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../blog-9.html">blog-9</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../blog-10.html">blog-10</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="link-section">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="../blog-11.html">blog-11</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../blog-12.html">blog-12</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../blog-13.html">blog-13</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../blog-14.html">blog-14</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../blog-15.html">blog-15</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="link-section">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="../blog-post-1.html">blog-post-1</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../blog-post-2.html">blog-post-2</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../blog-post-3.html">blog-post-3</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../blog-post-4.html">blog-post-4</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../blog-post-5.html">blog-post-5</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </section>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="menu-sec-parent">
-                                        <a href="#">Portfolio</a>
-                                        <div class="menu-container">
-                                            <div class="menu-type-2 menu-type-5  style-menu ">
-                                                <section class="link-section-wrapper clearfix">
-                                                    <div class="link-section">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="../gallery-1.html">gallery-1</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../gallery-2.html">gallery-2</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../gallery-3.html">gallery-3</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../gallery-4.html">gallery-4</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../gallery-5.html">gallery-5</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="link-section">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="../gallery-6.html">gallery-6</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../gallery-7.html">gallery-7</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../gallery-8.html">gallery-8</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../gallery-9.html">gallery-9</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../gallery-10.html">gallery-10</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="link-section">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="../gallery-11.html">gallery-11</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../gallery-12.html">gallery-12</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../gallery-13.html">gallery-13</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../gallery-14.html">gallery-14</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../gallery-15.html">gallery-15</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="link-section">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="../gallery-16.html">gallery-16</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../gallery-17.html">gallery-17</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../gallery-18.html">gallery-18</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../gallery-19.html">gallery-19</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="../gallery-20.html">gallery-20</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </section>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="#">Shop</a>
-                                        <div class="flyout-menu menu-type-1 menu-container">
-                                            <ul class="page-menu">
-                                                <li>
-                                                    <a href="../cart.html">cart.html</a>
-                                                </li>
-                                                <li>
-                                                    <a href="../catalog.html">catalog.html</a>
-                                                </li>
-                                                <li>
-                                                    <a href="../shopping-product.html">shopping-product.html</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
+                                    -->
                                 </ul>
                                 <div class="header-widget">
                                     <button class="glyphicon glyphicon-search search">
@@ -480,3 +292,5 @@
     <!--headerCntr End Here -->
 </header>
 <!--header Section End Here -->
+
+<?php //debug(@$sitemenu); ?>

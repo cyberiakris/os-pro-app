@@ -44,7 +44,7 @@ class HomesController extends AppController {
     public function index() {
 
         // homepage posts
-        $response0 = json_decode($this->HTTPClient->get($this->apiUrl . "pages/index.json", array('special'=>1), $this->request_headers), true);
+        $response0 = json_decode($this->HTTPClient->get($this->apiUrl . "posts/index.json", array('special'=>1), $this->request_headers), true);
         //debug($response0); exit;
         if(isset($response0['status']) && ($response0['status'])){
             $data = $response0['data'];
@@ -74,6 +74,13 @@ class HomesController extends AppController {
             $this->set('contents', $data);
         }
         */
+        
+        // sliders
+        $get_homepage_slider = json_decode($this->HTTPClient->get($this->apiUrl . "sliders.json", array('content_type'=>'default','limit'=>5), $this->request_headers), true);
+        //debug($get_homepage_slider); exit;
+        if(isset($get_homepage_slider['status']) && $get_homepage_slider['status'] == 'true'){
+            $this->set('sliders',$get_homepage_slider['data']);
+        }
 
     }
 

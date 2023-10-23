@@ -1,9 +1,8 @@
 <!--footer Section Start Here -->
 <footer id="footer"  >
-    <div class="container">
+    <!-- div class="container">
         <div class="row">
 
-            <!--primary-footer Start Here -->
             <section class="primary-footer clearfix">
                 <div class="col-sm-6 col-md-3 intro footer-content">
                     <h3>About us</h3>
@@ -53,16 +52,14 @@
                         <span class="tel"> <i class="fa fa-calendar">&nbsp;</i> <a href="tel:18003456789">1 800 345 67 89</a> </span> <span class="email"> <i class="fa fa-envelope">&nbsp;</i> <a href="mailto:noreply@theemon.com">noreply@theemon.com</a> </span> </div>
                 </div>
             </section>
-            <!--primary-footer End Here -->
 
         </div>
-    </div>
+    </div -->
     <div class="secondary-footer">
         <div class="container">
             <div class="row">
 
-                <!--secondary-footer Start Here -->
-                <section class="col-xs-12"> <span class="copyright">Gifted © Copyright 2014, <a href="http://theemon.com/" target="_blank">theemon.com</a></span>
+                <section class="col-xs-12"> <span class="copyright">OS PRO © Copyright <?php echo date('Y') ?>, <a href="#">site credits</a></span>
                     <ul class="social-icons">
                         <li> <a href="http://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a> </li>
                         <li> <a href="http://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a> </li>
@@ -70,7 +67,6 @@
                         <li> <a href="#" target="_blank"><i class="fa fa-dribbble"></i></a> </li>
                     </ul>
                 </section>
-                <!--secondary-footer End Here -->
 
             </div>
         </div>

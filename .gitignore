@@ -21,6 +21,8 @@
 
 # Ignore local configuration files
 /config/.env
+/config/bootstrap.php
+/config/settings.php
 
 # Ignore server-specific files (e.g., Apache, Nginx)
 #/webroot/.htaccess
